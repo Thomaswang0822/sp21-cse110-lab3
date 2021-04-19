@@ -1,0 +1,126 @@
+/* Learn to Use CSS to beautify my webpage */
+header {
+    background-color: #FFFFFF;
+    color: blueviolet;
+    font-size: 1cm;
+}
+
+h3 {
+    color: rgb(255, 165, 0);
+    font-size: 0.5in;
+}
+
+h4 {
+    color: hsl(240, 100%, 50%);
+    font-size: 30px; /* 3 absolute units finished */
+}
+/* Box Model list finished in section and input*/
+section {
+    border-style: dashed;
+    /* 3 relative units here */
+    border-width: 0.5ch;
+    border-color: aquamarine;
+    border-spacing: 1vh;
+    border-spacing: 1vw;
+    border-radius: 3vh;
+
+    margin-top: 1ch;
+    margin: 1ch, 1ch;
+    padding-bottom: 1ch;
+    /* Max and min width */
+    max-width: 50cm;
+    min-width: 10cm;
+}
+input {
+    margin: auto;
+    padding: 1vh, 1vh, 1vh, 1vh;
+    position:relative
+}
+
+h5:active {
+    /* text stuffs done here */
+    color: crimson;
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: justify;
+}
+/* Display finished */
+h6.display1 {
+    font-size: x-large;
+    display: inline;
+    position: sticky;
+}
+h6.display2 {
+    font-size: x-large;
+    display: inline-block;
+}
+a {
+    background-color: white;
+    transition: background-color .5s;
+}
+/* Hover here, active in h5 */
+a:hover {
+    background-color:cyan;
+}
+
+/* flexbox here */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.flex-container > li {
+    margin: 10px;
+    align-self: auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+/* media quary and Universal selector*/
+* {
+    background-color: white;
+}
+
+@media only screen and (max-width: 1500px) {
+    * {
+        background-color: lightblue;
+    }
+}
+/* Google font and id selector*/
+#Chinese {
+    font-family: 'Ma Shan Zheng', cursive;
+}
+/* attribute selector */
+a[target] {
+    background-color: aquamarine;
+}
+h1, h2, h3, h4, h5, h6 { font-family: 'Times New Roman', Times, serif; }
+
+/* Selector Combinator */
+section > p {
+    color: black;
+}
+form label {
+    color: darkblue;
+}
+h2 + p {
+    color: rgb(0, 252, 113);
+}
+input ~ label {
+    font-size: large;
+}
+p.hover {
+    font-size: large;
+}
